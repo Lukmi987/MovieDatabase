@@ -41,8 +41,8 @@ include "../classes/Movie.php"; // include student class
                         <td>" .$movie->getReleaseYear()."</td>
                         <td>" .$movie->getLength()."</td>
 
-                        <td><a href='UpdateMovie.php?id={$row['film_id']} '>Update</a></td>
-                        <td><a href='DeleteMovie.php'><button type='button'>Delete</button></a></td>
+                        <td><a href='UpdateMovie.php?id={$row['film_id']}'>Update</a></td>
+                        <td><a href='DeleteMovie.php?id={$row['film_id']}'><button type='button'>Delete</button></a></td>
                     </tr>
                 ";
             }
