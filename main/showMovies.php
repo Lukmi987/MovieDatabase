@@ -1,11 +1,27 @@
-<!-- this file shows how a simple db 'select' operation can be done in php -->
 <html>
 <head>
     <title>Select movie</title>
+    <script src="getMovies.js"></script>
 </head>
 
 <body>
+
 <h3><a href="insert.php">Insert a new movie to the list</a></h3>
+  <div>
+    <table id="listOfMovies" border="1">
+             <thead>
+               <tr>
+                 <td>Title</td>
+                 <td>Description</td>
+                 <td>Release year</td>
+                 <td>Length of the movie</td>
+               </tr>
+             </thead>
+             <tbody id="listOfMoviesBody">
+
+             </tbody>
+    </table>
+  </div>
 </body>
 </html>
 
