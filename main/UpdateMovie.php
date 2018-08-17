@@ -70,10 +70,7 @@ move_uploaded_file($sourcePath,$targetPath) ;    // Moving Uploaded file
           <br/> <br/>
           <input type="submit" name="sub" value="upload" />
       </form>
-
-      <?php
-
-
+    <?php
         if(isset($_POST['sub'])){
           if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
           {
@@ -88,7 +85,6 @@ move_uploaded_file($sourcePath,$targetPath) ;    // Moving Uploaded file
           }
         }
         displayImages();
-
         //php script to store imgs
         function saveImage($name,$image){
           $query = new queryToDatabase();
