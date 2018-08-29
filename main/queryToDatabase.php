@@ -52,7 +52,6 @@ class queryToDatabase{
 
     public function  selectFilm(){
       $filmId = $_GET['id'];
-      var_dump($filmId);
       $sql = "SELECT * FROM movies WHERE film_id='$filmId'";
       $result = mysqli_query($this->connect(), $sql) OR die(mysqli_error($this->connect()));
       return $result;
