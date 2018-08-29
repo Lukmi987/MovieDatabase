@@ -1,4 +1,5 @@
 
+
 <?php
 include "../config/dbconn.php"; // include connection file
 include "../classes/Movie.php"; // include student class
